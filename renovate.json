@@ -1,5 +1,16 @@
 {
 	"extends": [
 		"config:base"
+	],
+	"schedule": [
+		"after 11pm and before 5am"
+	],
+	"automerge": true,
+	"major": {
+		"automerge": false
+	},
+	"labels": [
+		"type: dependencies",
+		"renovate"
 	]
 }
