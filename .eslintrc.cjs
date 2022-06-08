@@ -23,5 +23,9 @@ module.exports = {
 		'svelte3/ignore-styles': () => true
 	},
 	plugins: ['import', 'svelte3', '@typescript-eslint'],
-	ignorePatterns: ['node_modules']
+	ignorePatterns: ['node_modules'],
+	globals: {
+		"__kordisConfig": "readonly",
+		"__appDetails": "readonly"
+	}
 }

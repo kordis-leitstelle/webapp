@@ -21,7 +21,6 @@
     "src/**/*.ts",
     "src/**/*.js",
     "src/**/*.svelte",
-    "vite.config.ts",
     "env.d.ts"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
