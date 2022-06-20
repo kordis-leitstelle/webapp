@@ -40,9 +40,7 @@
 {/if}
 
 <!-- Attribution -->
-<div
-	class="absolute z-10 bottom-0 right-0 bg-blue-50 px-1 bg-opacity-60 text-sm"
->
+<div class="absolute z-10 bottom-0  bg-blue-50 px-1 bg-opacity-60 text-sm">
 	Kordis Einsatzkarte | ©
 	<a href="https://cartesius.io" target="_blank">Cartesius</a>,
 	<a href="https://mapbox.com" target="_blank">Mapbox</a>,
@@ -62,5 +60,9 @@
 
 	#map-container {
 		@apply h-screen;
+	}
+
+	:global(.mapboxgl-ctrl-logo) {
+		display: none !important;
 	}
 </style>
