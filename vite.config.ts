@@ -8,6 +8,10 @@ export default defineConfig(() => {
 		plugins: [
 			svelte(),
 		],
+		test: {
+			globals: true,
+			environment: 'jsdom',
+		},
 		define: {
 			__kordisConfig: config().parsed,
 			__appDetails: {
