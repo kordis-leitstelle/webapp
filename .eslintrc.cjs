@@ -7,6 +7,12 @@ module.exports = {
 		'plugin:@typescript-eslint/recommended',
 		'plugin:@typescript-eslint/recommended-requiring-type-checking'
 	],
+	rules: {
+		"import/no-unresolved": "error",
+		// svelte currently does not support markdown typescript, but sometimes we want to use inline functions (events etc.)
+		"@typescript-eslint/no-unsafe-call": "warn",
+		"@typescript-eslint/no-unsafe-member-access": "warn",
+	},
 	parserOptions: {
 		tsconfigRootDir: __dirname,
 		project: ['./tsconfig.json'],
@@ -20,7 +26,12 @@ module.exports = {
 	],
 	settings: {
 		'svelte3/typescript': require('typescript'),
-		'svelte3/ignore-styles': () => true
+		'svelte3/ignore-styles': () => true,
+		"import/resolver": {
+			"typescript": {
+				"alwaysTryTypes": true,
+			}
+		}
 	},
 	plugins: ['import', 'svelte3', '@typescript-eslint'],
 	ignorePatterns: ['node_modules'],
