@@ -52,5 +52,15 @@ For E2E tests we use **Playwright**. It has some benefits over Cypress.
   npm run e2e
 ```
 
+To test and play with isolated components you can use **Storybook**.
+
+The latest Storybook of the `main` branch is available [here](https://62d08ae5c36c853a5a9b0808-wviakkiqvm.chromatic.com/).
+We use Chromatic as a Storybook hoster and to visualize UI changes.
+
+You can also run Storybook locally:
+```bash
+  npm run storybook
+```
+
 ## Contribute
 
