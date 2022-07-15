@@ -28,4 +28,5 @@ dist-ssr
 /test-results/
 /playwright-report/
 /playwright/.cache/
-storybook-static
+/storybook-static
+/coverage
