@@ -26,7 +26,7 @@ module.exports = {
     }
   },
   plugins: ['import', 'svelte3', '@typescript-eslint'],
-  ignorePatterns: ['node_modules'],
+  ignorePatterns: ['node_modules', '*stories.svelte'],
   globals: {
     "__kordisConfig": "readonly",
     "__appDetails": "readonly"
