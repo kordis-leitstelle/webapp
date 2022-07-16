@@ -13,6 +13,7 @@ const config = {
 				"icon-hover": "rgb(14, 165, 233)", // blue 500
 				"button-primary": "rgb(37, 99, 235)", // blue 600
 				"button-primary-hover": "rgb(29, 78, 216)", // blue 700
+				"primary": "rgb(37, 99, 235)", // blue 600
 			},
 			screens: {
 				"3xl": "2080px"
