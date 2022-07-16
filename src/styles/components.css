@@ -1,5 +1,23 @@
 @tailwind components;
 
 @layer components {
+	.krd-input {
+		@apply rounded-md border border-input bg-white shadow-sm focus:krd-input-focus;
+	}
 
+	.krd-button {
+		@apply inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm focus:outline-none focus:ring-2;
+	}
+
+	.krd-input-focus {
+		@apply border-input-focus ring-1 ring-input-focus outline-none;
+	}
+
+	.krd-input-error-focus {
+		@apply border-input-error-focus ring-input-error-focus;
+	}
+
+	.krd-input-error {
+		@apply border-input-error ring-input-error ring ring-1 text-label-error placeholder-red-300 focus:krd-input-error-focus;
+	}
 }
