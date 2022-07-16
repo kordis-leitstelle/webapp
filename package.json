@@ -10,7 +10,7 @@
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "test": "npx vitest",
     "test:ui": "npx vitest --ui",
-    "coverage": "npx vitest run --coverage",
+    "test:coverage": "npx vitest run --coverage",
     "e2e": "npx playwright test",
     "e2e:chrome": "npx playwright test --project=chromium",
     "e2e:debug": "npx playwright test --debug",
@@ -65,13 +65,13 @@
     "vitest": "0.18.0"
   },
   "dependencies": {
-    "@felte/validator-yup": "1.0.8",
+    "@felte/validator-zod": "^1.0.10",
     "@fortawesome/free-solid-svg-icons": "6.1.1",
     "dayjs": "1.11.3",
     "dotenv": "16.0.1",
     "felte": "1.2.2",
     "mapbox-gl": "2.9.2",
-    "yup": "0.32.11"
+    "zod": "^3.17.3"
   },
   "lint-staged": {
     "*.{js,ts,svelte}": "eslint --cache --fix",
