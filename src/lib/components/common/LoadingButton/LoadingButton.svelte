@@ -5,8 +5,7 @@
 	export let buttonType = 'button';
 	export let buttonClass = '';
 	export let isLoading = false;
-	//	Should be a registered tailwind color
-	export let spinnerColor = 'white';
+	export let spinnerClass: string;
 
 	const dispatch = createEventDispatcher();
 </script>
@@ -17,7 +16,7 @@
 	on:click={() => dispatch('clicked')}
 >
 	{#if isLoading}
-		<Spinner color={spinnerColor} />
+		<Spinner {spinnerClass} />
 	{/if}
 	<slot />
 </button>

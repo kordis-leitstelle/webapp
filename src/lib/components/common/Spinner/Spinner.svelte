@@ -1,15 +1,9 @@
 <script lang="ts">
-	// tailwind color
-	export let color = 'primary';
-	// tailwind size or a css size such as 20px
-	export let size = '5';
-
-	let classSize: string;
-	$: classSize = isNaN(Number(size)) ? `[${size}]` : size;
+	export let spinnerClass = 'w-5 h-5 fill-white text-primary';
 </script>
 
 <svg
-	class={`h-${classSize} w-${classSize} animate-spin mr-2 fill-blue-600 text-${color}`}
+	class={`${spinnerClass} animate-spin`}
 	viewBox="0 0 100 101"
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"

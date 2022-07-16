@@ -10,4 +10,7 @@
 </Template>
 
 <Story name="Default" args={{}} />
-<Story name="Custom size" args={{size: '20px'}} />
+<Story
+	name="Custom size"
+	args={{spinnerClass: 'w-24 h-24 fill-white text-primary'}}
+/>
