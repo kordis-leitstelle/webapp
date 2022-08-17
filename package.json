@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "lint": "eslint \"src/**/*.{js,ts,svelte}\"",
+    "lint:fix": "eslint \"src/**/*.{js,ts,svelte}\" --fix",
+    "check": "svelte-check --tsconfig ./tsconfig.json --use-new-transformation true --output human",
     "test": "npx vitest",
     "test:ui": "npx vitest --ui",
     "test:coverage": "npx vitest run --coverage",
@@ -41,11 +43,13 @@
     "babel-loader": "8.2.5",
     "c8": "7.12.0",
     "chromatic": "6.7.4",
-    "eslint": "8.20.0",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "3.4.0",
     "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-storybook": "0.6.1",
-    "eslint-plugin-svelte3": "4.0.0",
+    "eslint-plugin-svelte": "^2.6.0",
     "husky": "8.0.1",
     "jsdom": "20.0.0",
     "lint-staged": "13.0.3",
@@ -74,8 +78,7 @@
     "zod": "3.17.10"
   },
   "lint-staged": {
-    "*.{js,ts,svelte}": "eslint --cache --fix",
-    "*.{css,html,js.ts,svelte}": "prettier --write"
+    "*.{css,html,js,ts,svelte}": "eslint --cache --fix"
   },
   "readme": "ERROR: No README data found!",
   "_id": "kordis-webapp@0.0.0"
