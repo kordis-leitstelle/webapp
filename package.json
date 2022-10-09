@@ -73,7 +73,7 @@
     "@fortawesome/free-solid-svg-icons": "6.1.2",
     "dayjs": "1.11.4",
     "dotenv": "16.0.1",
-    "felte": "1.2.2",
+    "felte": "1.2.6",
     "mapbox-gl": "2.9.2",
     "zod": "3.17.10"
   },
