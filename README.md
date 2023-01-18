@@ -1,4 +1,6 @@
 
+## We have moved to a monorepo with this, check https://github.com/kordis-leitstelle/kordis
+
 # Kordis Webapp PoC
 
 tbd
